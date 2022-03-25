@@ -22,13 +22,15 @@ const styles = StyleSheet.create({
     },
     input: {
         borderColor : "#d8e1ea",
-        alignItems: "flex-end",
+        textAlign:'left',
+        fontSize:17,
+        paddingBottom:12,
         borderWidth: 1,
         width: 170,
         borderRadius: 5,
         height: 55,
         marginLeft: 30,
-        paddingLeft: 30,
+        paddingLeft: 10,
         paddingTop: 15,
     },
    

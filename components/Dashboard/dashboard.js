@@ -1,9 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
-import {
-  backgroundColor,
-  color,
-} from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
+
 
 export default function Dashboard() {
   return (

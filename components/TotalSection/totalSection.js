@@ -1,8 +1,8 @@
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import { View, Text, StyleSheet, TextInput,SafeAreaView } from "react-native";
 
 const Total = (props) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.section1}>
         <Text style={{ fontSize: 17 }}>Subtotal</Text>
         <Text style={{ fontSize: 17, color: "#cfcfcf" }}>
@@ -39,7 +39,7 @@ const Total = (props) => {
           {"\u20B9"} {props.total}
         </Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

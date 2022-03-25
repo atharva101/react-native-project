@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet,SafeAreaView } from "react-native";
 import style from "react-native-datepicker/style";
 import Icon from "react-native-vector-icons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -6,7 +6,7 @@ import Feather from "react-native-vector-icons/Feather";
 
 const Product = (props) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.head}>
         <Text style={styles.title}>{props.title} &#x3e;</Text>
         <FontAwesome5
@@ -45,7 +45,7 @@ const Product = (props) => {
         <Text style={styles.disc}>{props.disc}% Disc</Text>
         <Text style={styles.gst}>{props.gst}% gst</Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

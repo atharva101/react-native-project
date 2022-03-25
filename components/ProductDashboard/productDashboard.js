@@ -1,10 +1,14 @@
 import { react, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, SafeAreaView } from "react-native";
 import Btn from "../Button/button";
+import BtnBarcode from '../Button/btnBarCode'
+const ProductDashboard = (props) => {
 
-const ProductDashboard = () => {
+  //console.log(props.press)
+  
+  
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.infoContainer}>
         <Text style={styles.info1}>Products*</Text>
         <Text style={styles.info2}>Products: 2 | Qty: 67</Text>
@@ -13,11 +17,14 @@ const ProductDashboard = () => {
         <View style={styles.btn1}>
           <Btn text="Search to Add" />
         </View>
-        <View style={styles.btn2}>
-          <Btn text="Scan Barcode" />
+        <View  style={styles.btn2}>
+          <BtnBarcode nav = {props.press}text="Scan Barcode" />
         </View>
+        {/* <View style={styles.barcode}>
+          <BarCodeScanner style={StyleSheet.absoluteFillObject} />
+        </View> */}
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
